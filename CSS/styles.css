@@ -109,7 +109,7 @@ footer a {
 }
 
 /* -- pseudo classes -- */
-a:visited {
+a:link {
 	color: green;
 }
 
