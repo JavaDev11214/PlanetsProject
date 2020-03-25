@@ -1,165 +1,147 @@
 /* -- Navigation -- */
 .name,
 .main-nav li {
-	text-align: center;
-	margin-top: 6px;
-	margin-bottom: 6px;
-} 
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
 .main-nav li {
-	background-color: black;
-	border-radius: 5px;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .name a,
 .main-nav a {
-	padding: 10px  15px;
-	display: block;
+  padding: 10px 15px;
+  display: block;
 }
 
 ul.main-nav {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* -- Base Element Styles -- */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-	text-shadow: 2px 2px 2px white;
-	font-family: fantasy, tahoma, sans-serif;
-	font-size: 40px;
+  text-shadow: 2px 2px 2px white;
+  font-family: fantasy, tahoma, sans-serif;
+  font-size: 40px;
 }
 
 p {
-	font-family: Monospace, tahoma, sans-serif;
+  font-family: Monospace, tahoma, sans-serif;
 }
 
 h2 {
-	text-align: center;
+  text-align: center;
 }
 
 html {
-	background-color: lightblue;
+  background-color: lightblue;
 }
 
 img {
-	border-radius: 5px;
-	border-style: groove;
-}
-
-button {
-	background-color: black;
-	color: white;
-	border-radius: 10px;
-	margin-left: 10px;
+  border-radius: 5px;
+  border-style: groove;
 }
 
 a {
-	color: green;
+  color: green;
 }
 
 /* -- Layout Containers -- */
-#Form {
-	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
 
 .paragraph {
-	background-image: linear-gradient(to right, black, #540D0D);
-	color: white;
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px rgba(0,0,0,.8);
-	padding-left: 10px;
+  background-image: linear-gradient(to right, black, #540d0d);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
 }
 
 .paragraph p {
-	padding-top: 10px;
-	padding-right: 5px;
-	padding-bottom: 10px;
-	padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
 
 .content-image {
-	text-align: center;
+  text-align: center;
 }
 .container {
-	padding-left: 1em;
-	padding-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main-header {
-	text-align: center;
+  text-align: center;
 }
 
 .main-footer {
-	text-align: center;
-	margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 footer a {
-	text-decoration: none;
-	background-color: black;
-	font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  font-weight: bold;
 }
 
 /* -- pseudo classes -- */
 
-
 .paragraph a:visited {
-	color: white;	
+  color: white;
 }
 
-
 input:focus {
-	border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 a:hover {
-	color: white;
+  color: white;
 }
 
 .main-nav li:hover {
-	background-color: rgba(1, 1, 1, .9);
+  background-color: rgba(1, 1, 1, 0.9);
 }
 
 /* -- Media Queries -- */
 /* min-width of 769px or higher */
 
 @media (min-width: 769px) {
+  .wrap {
+    min-height: calc(100vh-89px);
+  }
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-	.wrap {
-		min-height: calc(100vh-89px);
-	}
-	.container {
-		width: 70%;
-		max-width: 1000px;
-		margin: 0 auto;	
-	}
-	
-	.name,
-	.main-nav li {
-		display: inline-block;
-	}
+  .name,
+  .main-nav li {
+    display: inline-block;
+  }
 
-	.name {
-		width: 240px;
-		float: left;
-	}
-	
-	.main-nav li {
-		margin-right: 12px;
-	}
-	
+  .name {
+    width: 240px;
+    float: left;
+  }
+
+  .main-nav li {
+    margin-right: 12px;
+  }
 }
-
-
